@@ -1,26 +1,11 @@
-import { useState } from "react";
-import { Navbar, Container, Nav, Button } from "react-bootstrap";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+import Container from "./Container";
+import Footer from "./Footer";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="App">
-      <div>
-        <Navbar bg="light" variant="light">
-          <Container>
-            <Navbar.Brand href="#home">Jeongwook Oh</Navbar.Brand>
-            <Nav className="me-auto">
-              <Nav.Link href="">Introduction</Nav.Link>
-            </Nav>
-          </Container>
-        </Navbar>
-      </div>
-      <div>
-        <Button variant="primary">Primary</Button>
-      </div>
+    <div className="flex flex-col place-items-center w-full bg-slate-400">
+      <Container />
+      <Footer />
     </div>
   );
 }
