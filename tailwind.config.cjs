@@ -3,7 +3,12 @@ module.exports = {
   darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Montserrat: ["Montserrat", "ui-monospace"],
+        Poppins: ["Poppins", "ui-monospace"],
+      },
+    },
   },
   plugins: [],
 };

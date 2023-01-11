@@ -3,7 +3,7 @@ import Footer from "./Footer";
 
 function App() {
   return (
-    <div className="flex flex-col place-items-center w-full bg-slate-600">
+    <div className="flex flex-col place-items-center w-full bg-stone-700">
       <Container />
       <Footer />
     </div>
