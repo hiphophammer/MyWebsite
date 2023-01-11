@@ -2,6 +2,7 @@ import { RxLinkedinLogo } from "react-icons/rx";
 import { IconContext } from "react-icons";
 import { FaGithubSquare } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
+import { RiTimeLine } from "react-icons/ri";
 import { RiMailOpenFill as MailIcon } from "react-icons/ri";
 import portrait from "./assets/img/portrait.png";
 import cat from "./assets/img/cat.png";
