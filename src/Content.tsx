@@ -1,7 +1,7 @@
 import imgHtml from "./assets/img/logos/html.png";
 import imgCss from "./assets/img/logos/css.png";
 import imgJS from "./assets/img/logos/javascript.png";
-import imgTailwind from "./assets/img/logos/tailwind.png";
+import imgTailwind from "./assets/img/logos/tailwindcss-icon.svg";
 import imgNode from "./assets/img/logos/node.png";
 import imgTS from "./assets/img/logos/typescript.svg";
 import imgVue from "./assets/img/logos/vue.avif";
@@ -14,6 +14,11 @@ import imgFlask from "./assets/img/logos/pocoo_flask-icon.svg";
 import imgSupabase from "./assets/img/logos/supabase-icon.svg";
 import imgMysql from "./assets/img/logos/mysql-icon.svg";
 import imgMongoDB from "./assets/img/logos/mongodb-icon.svg";
+import imgLinux from "./assets/img/logos/linux-icon.svg";
+import imgJava from "./assets/img/logos/java-icon.svg";
+import imgCsharp from "./assets/img/logos/Csharp-icon.svg";
+import imgDocker from "./assets/img/logos/docker-icon.svg";
+import imgGit from "./assets/img/logos/git-scm-icon.svg";
 import { useState, useEffect } from "react";
 
 const Container = () => {
@@ -64,15 +69,15 @@ const Container = () => {
                 Front End
               </p>
               <div className="flex flex-row justify-between place-items-center mb-4">
-                <img src={imgHtml} className="w-16 h-14" title="HTML" />
-                <img src={imgCss} className="w-16 h-16" title="CSS" />
+                <img src={imgHtml} className="w-14 h-14" title="HTML" />
+                <img src={imgCss} className="w-14 h-16" title="CSS" />
                 <img src={imgJS} className="w-14 h-14" title="JavaScript" />
-                <img src={imgTailwind} className="w-14 h-14" title="Tailwind" />
+                <img src={imgTailwind} className="w-12 h-12" title="Tailwind" />
               </div>
               <div className="flex flex-row justify-between place-items-center">
                 <img src={imgReact} className="w-16 h-14" title="React" />
-                <img src={imgNext} className="w-16 h-14" title="Next.js" />
-                <img src={imgVite} className="w-16 h-14" title="Vite" />
+                <img src={imgNext} className="w-14 h-14" title="Next.js" />
+                <img src={imgVite} className="w-14 h-14" title="Vite" />
                 <img src={imgVue} className="w-14 h-14" title="Vue" />
               </div>
             </div>
@@ -95,7 +100,11 @@ const Container = () => {
               <div className="flex flex-row justify-between place-items-center">
                 <img src={imgPython} className="w-14 h-14" title="Python" />
                 <img src={imgFlask} className="w-14 h-14" title="Flask" />
-                <img src={imgMysql} className="w-14 h-14" title="SQL" />
+                <img
+                  src={imgMysql}
+                  className="w-14 h-14"
+                  title="SQL (Mainly MySQL/Postgre)"
+                />
                 <img src={imgMongoDB} className="w-14 h-14" title="MongoDB" />
               </div>
             </div>
@@ -106,11 +115,17 @@ const Container = () => {
                 Others
               </p>
               <div className="flex flex-row justify-between place-items-center mb-4">
-                <img src={imgHtml} className="w-16 h-14" title="HTML" />
-                <img src={imgCss} className="w-16 h-16" title="CSS" />
+                <img
+                  src={imgLinux}
+                  className="w-14 h-14"
+                  title="Linux (Mainly Ubuntu)"
+                />
+                <img src={imgJava} className="w-14 h-14" title="Java" />
+                <img src={imgCsharp} className="w-14 h-14" title="C#" />
+                <img src={imgGit} className="w-14 h-14" title="Git" />
               </div>
               <div className="flex flex-row justify-between place-items-center">
-                <img src={imgVue} className="w-16 h-14" title="Vue" />
+                <img src={imgDocker} className="w-14 h-14" title="Docker" />
               </div>
             </div>
           </div>
