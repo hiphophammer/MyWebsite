@@ -19,11 +19,14 @@ import imgJava from "./assets/img/logos/java-icon.svg";
 import imgCsharp from "./assets/img/logos/Csharp-icon.svg";
 import imgDocker from "./assets/img/logos/docker-icon.svg";
 import imgGit from "./assets/img/logos/git-scm-icon.svg";
+import imgHeroku from "./assets/img/logos/heroku-icon.svg";
+import imgGoogleCloud from "./assets/img/logos/google_cloud-icon.svg";
+import imgAWS from "./assets/img/logos/amazon_aws-icon.svg";
 import { useState, useEffect } from "react";
 
 const Container = () => {
-  const cellStyle = `bg-stone-100 mb-10 p-6`;
-  const headerStyle = `font-Montserrat text-3xl mb-5`;
+  const cellStyle = `bg-stone-100 mb-10 p-4`;
+  const headerStyle = `font-Montserrat text-3xl mb-5 bg-stone-200 text-stone-700`;
   const paragraphStyle = `font-Poppins`;
 
   const mainAnimationStyle = `transition-all duration-[1500ms] ease-out`;
@@ -112,7 +115,7 @@ const Container = () => {
           <div className="flex basis-[30%] flex-col">
             <div className="rounded-xl shadow-2xl z-10 px-1 py-5">
               <p className="font-Poppins text-yellow-700 text-2xl text-center mb-5">
-                Others
+                Other Skills
               </p>
               <div className="flex flex-row justify-between place-items-center mb-4">
                 <img
@@ -126,6 +129,13 @@ const Container = () => {
               </div>
               <div className="flex flex-row justify-between place-items-center">
                 <img src={imgDocker} className="w-14 h-14" title="Docker" />
+                <img src={imgHeroku} className="w-14 h-14" title="Heroku" />
+                <img
+                  src={imgGoogleCloud}
+                  className="w-14 h-14"
+                  title="Google Cloud"
+                />
+                <img src={imgAWS} className="w-14 h-14" title="AWS" />
               </div>
             </div>
           </div>
@@ -134,7 +144,7 @@ const Container = () => {
       <div className={cellStyle} id="projects">
         <div className={headerStyle}>Projects</div>
         <div className={headerStyle}></div>
-        <div className={headerStyle}>Personal</div>
+        <div className="font-Montserrat text-2xl">Personal Projects</div>
         <div className="flex flex-row justify-between">
           <span>House-elf</span>
           <span>Image Uploader</span>
@@ -147,8 +157,61 @@ const Container = () => {
       </div>
       <div className={cellStyle} id="exp">
         <div className={headerStyle}>Experience</div>
-        <div className={headerStyle}>Freelance Translator</div>
-        <div className={headerStyle}>ML/AI Developer</div>
+        <div className="font-Montserrat text-2xl">
+          <div className="flex flex-row justify-between place-items-center">
+            <p className={paragraphStyle}>Freelance Translator</p>
+            <p className={paragraphStyle + ` text-base`}>
+              Nov. 2019 - Jan. 2023
+            </p>
+          </div>
+
+          <div className="font-Poppins text-base w-full bg-stone-100">
+            <p>
+              After acquiring my Green Card in 2019, I had an opportunity to
+              work as a contract-based freelance translator. Even though this
+              doesn't directly involve software engineering, I've demonstrated
+              the following in a professional setting:
+            </p>
+            <p className="ml-5">
+              1. Outstanding ability to cope with various clients; each client
+              has unique needs, different expectations, and different
+              personality. Everyone has been happy with my tailored service and
+              I have maintained a perfect review score for 3 years.
+            </p>
+            <p className="ml-5">
+              2. Effective time management. Sometimes I had extremely tight
+              turnovers, as low as 24 hours, on top of my full-time school work.
+              I never missed a single deadline.
+            </p>
+            <p className="ml-5">
+              3. How to soak knowledge. Some of my work required knowledge of
+              professional vocabulary and jargons. One time, I learned what
+              diabetic peripheral neuropathy (DPN) is, and how clinical trials
+              in the United States works overnight and transcribe/translate a
+              3-hour-long video of a medical presentation.
+            </p>
+          </div>
+        </div>
+        <div className="font-Montserrat text-2xl">
+          <div className="flex flex-row justify-between place-items-center">
+            <p className={paragraphStyle}>ML/AI Developer</p>
+            <p className={paragraphStyle + ` text-base`}>
+              Nov. 2021 - Jun. 2022
+            </p>
+          </div>
+
+          <div className="font-Poppins text-base w-full bg-stone-100">
+            <p>
+              Briotech is a world-class manufacturer of hypochlorous acid (HOCl)
+              and a pioneer of innovation for the creation of the world’s first
+              geographically dispersed HOCl manufacturing networks, BrioWHISH®
+              Systems (WHISH). I worked on the WHISH for 7 months to develop an
+              AI that predicts the outcome variable based on the machine's
+              parameters. This is to solve a problem which will soon be
+              explained in the following section.
+            </p>
+          </div>
+        </div>
       </div>
       <div className={cellStyle} id="edu">
         <div className={headerStyle}>Education</div>
