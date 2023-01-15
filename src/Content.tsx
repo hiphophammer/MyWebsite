@@ -2,7 +2,18 @@ import imgHtml from "./assets/img/logos/html.png";
 import imgCss from "./assets/img/logos/css.png";
 import imgJS from "./assets/img/logos/javascript.png";
 import imgTailwind from "./assets/img/logos/tailwind.png";
+import imgNode from "./assets/img/logos/node.png";
+import imgTS from "./assets/img/logos/typescript.svg";
 import imgVue from "./assets/img/logos/vue.avif";
+import imgReact from "./assets/img/logos/react.png";
+import imgNext from "./assets/img/logos/Nextjs-logo.svg";
+import imgVite from "./assets/img/logos/vite.png";
+import imgPython from "./assets/img/logos/python.png";
+import imgEx from "./assets/img/logos/expressjs-icon.svg";
+import imgFlask from "./assets/img/logos/pocoo_flask-icon.svg";
+import imgSupabase from "./assets/img/logos/supabase-icon.svg";
+import imgMysql from "./assets/img/logos/mysql-icon.svg";
+import imgMongoDB from "./assets/img/logos/mongodb-icon.svg";
 import { useState, useEffect } from "react";
 
 const Container = () => {
@@ -48,7 +59,7 @@ const Container = () => {
         <div className={headerStyle}>Skills</div>
         <div className="flex justify-between">
           <div className="flex basis-[30%] flex-col">
-            <div className="rounded-xl shadow-2xl z-10">
+            <div className="rounded-xl shadow-2xl z-10 py-5 px-1">
               <p className="font-Poppins text-yellow-700 text-2xl text-center mb-5">
                 Front End
               </p>
@@ -59,26 +70,50 @@ const Container = () => {
                 <img src={imgTailwind} className="w-14 h-14" title="Tailwind" />
               </div>
               <div className="flex flex-row justify-between place-items-center">
-                <img src={imgVue} className="w-16 h-14" title="Vue" />
+                <img src={imgReact} className="w-16 h-14" title="React" />
+                <img src={imgNext} className="w-16 h-14" title="Next.js" />
+                <img src={imgVite} className="w-16 h-14" title="Vite" />
+                <img src={imgVue} className="w-14 h-14" title="Vue" />
               </div>
             </div>
-            <div className="rounded-xl bg-[#000000] z-10 mt-5">
+          </div>
+          <div className="flex basis-[30%] flex-col">
+            <div className="rounded-xl shadow-2xl z-10 py-5 px-1">
               <p className="font-Poppins text-yellow-700 text-2xl text-center mb-5">
                 Back End
               </p>
               <div className="flex flex-row justify-between place-items-center mb-4">
+                <img src={imgTS} className="w-14 h-14" title="TypeScript" />
+                <img
+                  src={imgNode}
+                  className="w-14 h-14 rounded-full"
+                  title="Node"
+                />
+                <img src={imgEx} className="w-16 h-11" title="Express" />
+                <img src={imgSupabase} className="w-14 h-14" title="Supabase" />
+              </div>
+              <div className="flex flex-row justify-between place-items-center">
+                <img src={imgPython} className="w-14 h-14" title="Python" />
+                <img src={imgFlask} className="w-14 h-14" title="Flask" />
+                <img src={imgMysql} className="w-14 h-14" title="SQL" />
+                <img src={imgMongoDB} className="w-14 h-14" title="MongoDB" />
+              </div>
+            </div>
+          </div>
+          <div className="flex basis-[30%] flex-col">
+            <div className="rounded-xl shadow-2xl z-10 px-1 py-5">
+              <p className="font-Poppins text-yellow-700 text-2xl text-center mb-5">
+                Others
+              </p>
+              <div className="flex flex-row justify-between place-items-center mb-4">
                 <img src={imgHtml} className="w-16 h-14" title="HTML" />
                 <img src={imgCss} className="w-16 h-16" title="CSS" />
-                <img src={imgJS} className="w-14 h-14" title="JavaScript" />
-                <img src={imgTailwind} className="w-14 h-14" title="Tailwind" />
               </div>
               <div className="flex flex-row justify-between place-items-center">
                 <img src={imgVue} className="w-16 h-14" title="Vue" />
               </div>
             </div>
           </div>
-          <div className="flex basis-[30%] bg-red-500">dfd</div>
-          <div className="flex basis-[30%] bg-red-500">dfd</div>
         </div>
       </div>
       <div className={cellStyle} id="projects">
