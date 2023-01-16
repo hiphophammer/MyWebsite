@@ -66,11 +66,6 @@ const NavBar = () => {
             Education
           </a>
         </li>
-        <li>
-          <a href="#contact" className={linkHover}>
-            Contact Me
-          </a>
-        </li>
       </ul>
       <div className="flex flex-row mt-5 mb-5 w-24 justify-between">
         <IconContext.Provider value={{ size: "2.5em" }}>

@@ -26,7 +26,7 @@ import { useState, useEffect } from "react";
 
 const Container = () => {
   const cellStyle = `bg-stone-100 mb-10 p-4`;
-  const headerStyle = `font-Montserrat text-3xl mb-5 bg-stone-200 text-stone-700`;
+  const headerStyle = `font-Montserrat text-4xl mb-5 bg-stone-200 text-stone-700`;
   const paragraphStyle = `font-Poppins`;
 
   const mainAnimationStyle = `transition-all duration-[1500ms] ease-out`;
@@ -146,13 +146,18 @@ const Container = () => {
         <div className={headerStyle}></div>
         <div className="font-Montserrat text-2xl">Personal Projects</div>
         <div className="flex flex-row justify-between">
-          <span>House-elf</span>
-          <span>Image Uploader</span>
+          <div className="flex flex-row bg-blue-500 w-full h-80">
+            <span className="basis-1/3 bg-red-500">Discord Bot</span>
+            <span className="basis-1/3">Image Uploader</span>
+            <span className="basis-1/3 bg-red-500">This Webpage</span>
+          </div>
         </div>
-        <div className={headerStyle}>Cooperative</div>
+        <div className="font-Montserrat text-2xl">Cooperative Projects</div>
         <div className="flex flex-row justify-between">
-          <span>Galaxy Busters</span>
-          <span>Face Recognizer</span>
+          <div className="flex flex-row bg-blue-500 w-full h-80">
+            <span className="basis-1/2 bg-red-500">Galaxy Busters</span>
+            <span className="basis-1/2">Face Recognition</span>
+          </div>
         </div>
       </div>
       <div className={cellStyle} id="exp">
@@ -224,30 +229,6 @@ const Container = () => {
         <p className={paragraphStyle + ` text-stone-500`}>
           University of Washington Bothell
         </p>
-      </div>
-      <div className={cellStyle} id="contact">
-        <div className={headerStyle}>Contact Me</div>
-        <div>Email</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
-        <div>dffdszfdzs zsdfdszfzsd sdfszf</div>
       </div>
     </main>
   );
