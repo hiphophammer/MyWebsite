@@ -22,7 +22,7 @@ import imgGit from "./assets/img/logos/git-scm-icon.svg";
 import imgHeroku from "./assets/img/logos/heroku-icon.svg";
 import imgGoogleCloud from "./assets/img/logos/google_cloud-icon.svg";
 import imgAWS from "./assets/img/logos/amazon_aws-icon.svg";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const Container = () => {
   const cellStyle = `bg-stone-100 mb-10 p-4`;
